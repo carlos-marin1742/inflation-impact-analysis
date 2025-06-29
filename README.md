@@ -1,60 +1,48 @@
-#  Spotify Music Recommendation system using Spotify API
-
-<img src="https://i.pcmag.com/imagery/reviews/042FW7hC9vrGnoDea9LArXI-35.fit_scale.size_1028x578.v1674253030.png" width=700 height=500 />
+#  Inflation Impact Analysis Using Python
 
 ## Background
 
-A Music Recommendation System is an application of Data Science that aims to assist users in discovering new and relevant musical content based on their preferences and listening behaviour. Personalized music recommendations have become an essential tool in the digital music landscape, enabling music streaming platforms like Spotify and Apple Music to offer personalized and engaging experiences to their users. 
+Inflation affects purchasing power, savings, investment, and international currency values. In open economies like India and the U.S., inflation often influences exchange rates, especially when analyzed through macroeconomic theories such as Purchasing Power Parity (PPP). 
 
 
 
 
 ## Business Problem
 
-We are building a music recommendation system using Spotify API.
+Understanding how inflation impacts the INR/USD exchange rate can help economists, policymakers, and financial analysts make informed decisions regarding currency valuation, monetary policy, and cross-border investments.
 
-Why?
-    
-Data is constantly changing, a CSV file for analysis may not always be available.
-    
-Being Able to pull data using API, allows you to do analysis without the need for a CSV or data file.
-
-## Data
-
-Playlist is created by me, on Spotify, which is accessible after obtaining access using Spotify API.
-
-Any Playlist on Spotify, is eligible for analysis.
 
 
 ## Methods
+- Collected historical inflation and exchange rate data for India and the U.S. (1980–2024).
 
-Using Spotify Developer, obtained credentials.
+- Cleaned and merged datasets to enable year-by-year comparison.
 
-With credentials, were then encoded to create secure representation of credentials using base64 encoding.
+- Visualized trends using line plots for inflation rates and exchange rates.
 
-Token Access was requested using Spotify API.
+- Conducted correlation analysis to identify statistical relationships.
 
-Using Spotify's Python library, Spotipy, created function that allowed us to pull Spotify Music Data
+- Applied the PPP formula to compute expected exchange rates based on inflation differentials.
 
-Created Music Recommendation System using Cosine Similarity based on music Audio Features.
+- Compared actual vs. expected exchange rates to assess PPP validity and uncover anomalies.
 
 
 ## Results
+- Weak negative correlation between India's inflation and INR/USD exchange rate (-0.34).
 
-The created function created using cosine similarity provides list of similar songs based on audio features, into a pandas Dataframe.
+- Weak positive correlation between U.S. inflation and the exchange rate (0.24).
+
+- PPP-based expected exchange rate showed a steeper depreciation of INR than actual data suggested.
+
+- Significant deviations between actual and expected rates indicate additional influencing factors.
 
 
 
 ## Conclusions / Summary of Findings
 
-By using API to access data, we can create ongoing recommendation systems without the need ongoing creating CSV/data files. 
+Inflation rates in both India and the U.S. influence the INR/USD exchange rate, but not in isolation. While the PPP theory explains some long-term trends, actual exchange rate movements are also shaped by broader economic variables such as monetary policy, trade flows, and market sentiment.
 
 
 
-
-
-### Overview of Github structure
-
-├── README.md : project information and repository structure
 
 
